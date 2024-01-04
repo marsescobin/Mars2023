@@ -1,0 +1,283 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 7.5%; 
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    max-width: 1200px;
+}
+
+#container1 {
+    flex-direction: row;
+
+}
+
+    .frame {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+        h1 {
+            font-size: 48px; 
+            margin-bottom: 20px; 
+            font-weight: 300;
+        }
+
+    #avatar-holder {
+        display: flex;
+        margin-top: 10vh;  
+
+            
+        }
+        
+        .avatar{
+            flex-direction: column;
+            display: flex;
+            position: relative;
+            margin: 50px;
+            }
+
+        #avatar2 {
+                transform: rotate(9deg);
+                background: #FFF;
+                bottom: 250px;
+            
+            }
+            
+            
+        #avatar1 {
+            transform: rotate(-9deg);
+            
+            }
+            
+            #avatar1 img, #avatar2 img {
+                height:175px;
+                width: 150px;
+                border-radius: 8px;
+                transform: scaleX(-1);
+                border-radius: 16px;
+                border: 3px solid #000;
+              
+            } 
+
+            #avatar1 img {
+                height:150px;
+            }
+            
+
+#container2 {
+    flex-direction: column;
+}
+
+
+    #topic-selection {
+        display: flex;
+        gap: 24px;
+        font-weight: 200px;
+    }
+    
+        h2 {
+            font-weight: 800;
+        }
+
+
+
+
+
+#btn-options {
+gap: 24px;
+margin: 24px 0px ;
+display: flex;
+flex-direction: row;
+}
+
+.topic {
+    display: flex;
+    gap: 24px;
+
+}
+
+h5 {
+    display: flex;
+    font-weight: 500;
+    align-items: flex-end;
+}
+
+h6{
+    margin: 0;
+}
+
+
+p {
+    font-size: 26px; /* Adjust the font-size as needed */
+    line-height: 1.4; /* Adjust the line-height to match the image */
+    margin-bottom: 10px; /* Adjust the space between paragraphs as needed */
+    font-weight: 200;
+}
+
+span {
+    background-color: black;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding: 4px 12px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+#location {
+   background-color: transparent;
+   color: black;
+   padding: 0;
+   border-radius: 0;
+   cursor: pointer;
+  
+}
+
+#span-pm {
+    background-color: black
+}
+
+#span-dev {
+    background-color: black;
+}
+
+#span-designer {
+    background-color: black;
+}
+
+button {
+display: inline-flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+font-size: 20px;
+font-weight: 200;
+font-family: 'Arial Narrow Bold', sans-serif;
+border-radius: 8px;
+border: 0px solid #000; /* Adds a bottom border, change color as needed */
+cursor: pointer; /* Makes sure the cursor changes to a pointer on hover */
+  }
+  
+button:focus {
+    outline: none; /* Ensures the outline is removed even when the button is focused */
+  }
+  
+
+
+
+
+  .svg-holder {
+    border: #000 1.5px solid;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 24px;
+  }
+
+  .text-title {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .text-description {
+    font-size: 20px;
+  }
+
+  .modals{
+    border: 1px solid black;
+    height: 420px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: white;
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+  }
+
+ 
+.svg {
+    width: 200px;
+    height: 200px;
+}
+
+#container-2 {
+    max-width: 1200px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #container1 {
+        flex-direction: column-reverse;
+    }
+
+    #avatar-holder {
+        margin-top: 0;
+        align-items: center;
+        left: 150px;
+        position: relative;
+    }
+
+    .avatar {
+        margin: 0;
+    }
+
+    #avatar2 {
+        bottom: 175px;
+    }
+
+    #text-intro {
+        position: relative;
+        bottom: 300px;
+    }
+
+
+    .text-title {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+
+    #text-intro {
+        position: relative;
+        bottom: 250px;
+    }
+
+    #avatar-holder {
+        top: 25px;
+    }
+
+
+   button {
+    font-size: 18px;
+   }
+
+}
+
+@media only screen and (max-width: 420px) {
+    #avatar1 img, #avatar2 img {
+        height: 50%;
+        width: 50%;
+        border-radius: 8px;
+    } 
+
+}
+
