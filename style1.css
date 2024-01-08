@@ -99,10 +99,16 @@ span {
   span {
     font-size: 16px;
     padding: 2px 8px;
+    line-height: 1.8px;
   }
 
   h1 {
     font-size: 36px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 6px;
   }
 }
 /*
