@@ -53,18 +53,21 @@ ul {
 }
 
 #body ul {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 #buttons ul {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 button {
   border: none;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 16px;
+  display: flex;
+  font-size: 22px;
 }
 
 h1 {
@@ -82,11 +85,16 @@ li {
 span {
   background-color: black;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   padding: 4px 8px;
   border-radius: 32px;
   cursor: pointer;
+}
+
+#location {
+  background-color: white;
+  color: black;
+  padding: 0px;
 }
 
 @media only screen and (max-width: 420px) {
@@ -113,11 +121,12 @@ span {
   button {
     font-size: 16px;
     padding: 6px 12px;
+    padding: 4px 8px;
+    border-radius: 32px;
+    cursor: pointer;
   }
 
   #buttons ul {
-    display: flex;
-    justify-content: center;
     gap: 4px;
   }
 }

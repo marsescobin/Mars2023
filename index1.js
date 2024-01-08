@@ -7,3 +7,32 @@ document.addEventListener("click", function (e) {
     avatar2.classList.toggle("move-left");
   }
 });
+const location = document.getElementById("location");
+let locations = [
+  "Manila",
+  "Paris",
+  "Split",
+  "Porto",
+  "Lisbon",
+  "La Spezia",
+  "Ho Chi Minh",
+  "Rome",
+  "Bangkok",
+  "Budapest",
+  "Singapore",
+  "San Francisco",
+  "Cairns",
+  "Melbourne",
+  "Sydney",
+  "Bali",
+];
+let i = 0;
+
+const intervalId = setInterval(() => {
+  location.textContent = locations[i];
+  if (i >= locations.length - 1) {
+    clearInterval(intervalId);
+  } else {
+    i++;
+  }
+}, 300);
