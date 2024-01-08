@@ -124,6 +124,7 @@ span {
     padding: 4px 8px;
     border-radius: 32px;
     cursor: pointer;
+    color: black;
   }
 
   #buttons ul {
