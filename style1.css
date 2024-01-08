@@ -114,6 +114,10 @@ span {
     line-height: 1.8px;
   }
 
+  #location {
+    padding: 0px;
+  }
+
   h1 {
     font-size: 36px;
   }
