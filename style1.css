@@ -52,6 +52,10 @@ ul {
   padding: 0;
 }
 
+#body ul {
+  margin-bottom: 24px;
+}
+
 #buttons ul {
   display: flex;
   gap: 10px;
@@ -108,7 +112,7 @@ span {
 
   button {
     font-size: 16px;
-    padding: 6px;
+    padding: 4px;
   }
 }
 /*
