@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 100px auto;
+  max-width: 900px;
 }
 .avatar img {
   height: 175px;
@@ -43,3 +44,56 @@ body {
 .move-right {
   right: 75px;
 }
+
+/*TEXT*/
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+}
+
+#buttons ul {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 12px;
+  border-radius: 16px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+li {
+  font-size: 26px; /* Adjust the font-size as needed */
+  line-height: 1.4; /* Adjust the line-height to match the image */
+  margin-bottom: 10px; /* Adjust the space between paragraphs as needed */
+  font-weight: 200;
+}
+
+span {
+  background-color: black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 4px 12px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+/*
+Media query elements 
+ li {
+    font size: 
+
+ } 
+
+ body {
+    max-width:
+}
+*/
