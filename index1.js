@@ -24,7 +24,7 @@ let locations = [
   "Cairns",
   "Melbourne",
   "Sydney",
-  "Bali",
+  "Bali.",
 ];
 let i = 0;
 
@@ -33,6 +33,6 @@ const intervalId = setInterval(() => {
   if (i >= locations.length - 1) {
     clearInterval(intervalId);
   } else {
-    i++;
+    i++; // Increment i only if it's not the last element
   }
 }, 300);

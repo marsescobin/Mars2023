@@ -6,6 +6,10 @@ body {
   margin: 100px auto;
   max-width: 900px;
 }
+
+#body {
+  margin: 20px;
+}
 .avatar img {
   height: 175px;
   width: 150px;
@@ -136,14 +140,10 @@ span {
     gap: 4px;
   }
 }
-/*
-Media query elements 
- li {
-    font size: 
 
- } 
+/** Animation */
 
- body {
-    max-width:
+#location {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
-*/
