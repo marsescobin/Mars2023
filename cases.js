@@ -9,8 +9,7 @@ export const caseStudies = [
   {
     img: "./photos/img3.svg",
     link: "mariannetrizha.github.io/cv",
-    title:
-      "Shrunk onboarding time from weeks to minutes with 3rd party partnership",
+    title: "Shrunk onboarding time with 3rd party partnership",
     subtitle: `A collab with deel.com's product team cut our onboarding time from
     weeks to minutes. Users were happy and our internal HR team just
     saved 50 hours.`,
@@ -18,7 +17,7 @@ export const caseStudies = [
   {
     img: "./photos/img4.svg",
     link: "mariannetrizha.github.io/cv",
-    title: "Chopped payment support tickets in half with dashboard revamp",
+    title: "Chopped support tickets with dashboard revamp",
     subtitle: `User interviews and sentiment analysis of Support tickets lead to
     one conclusion: our payment dashboards need to be clearer, more
     visible, and transparent..`,

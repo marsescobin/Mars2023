@@ -23,7 +23,7 @@ function render(array) {
     <div class = "case-text">
       <h2>${caseStudy.title}</h2>
       <p>${caseStudy.subtitle}</p>
-      <a class = "button-style" href="${caseStudy.link}">See more</a>
+      <a class = "button-style" href="${caseStudy.link}">Read more</a>
   </div>
   </div>`
   );
