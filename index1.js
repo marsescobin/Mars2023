@@ -1,4 +1,4 @@
-import { caseStudies } from "/cases.js";
+import { caseStudies } from "./cases.js";
 
 const location = document.getElementById("location");
 const adendum = document.getElementById("adendum");
