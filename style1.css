@@ -168,10 +168,6 @@ span {
     gap: 4px;
   }
 
-  #buttons ul li button:hover {
-    font-size: 20px;
-  }
-
   .button-style {
     padding: 12px 0px;
     border-radius: 16px;
