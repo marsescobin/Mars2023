@@ -51,7 +51,9 @@ document.addEventListener("click", function (e) {
 function render(array) {
   const cases = array.map(
     (caseStudy) => `<div class = "case">
+    <div class = "case-img">
     <img src="${caseStudy.img}">
+    </div>
     <div class = "case-text">
       <h2>${caseStudy.title}</h2>
       <p>${caseStudy.subtitle}</p>
