@@ -138,6 +138,9 @@ span {
   margin: auto 40px;
 }
 
+.case img {
+}
+
 .case-img {
   background-color: #90a7df;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -195,7 +198,6 @@ span {
   .case img {
     height: 200px;
     width: 200px;
-    border-radius: 77% 230% 53% 59% / 97% 48% 82% 69%;
   }
 
   .case-text p {
@@ -215,5 +217,5 @@ span {
 
 #buttons ul li button:hover {
   background-color: #90a7df;
-  color: black;
+  color: white;
 }
