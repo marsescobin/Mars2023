@@ -10,7 +10,8 @@ body {
 #body {
   margin: 20px;
 }
-.avatar img {
+
+img {
   height: 175px;
   width: 150px;
   transform: scaleX(-1);
@@ -60,7 +61,7 @@ ul {
 
 #buttons ul li button {
   cursor: pointer;
-  transition: all 0.25s;
+  transition: all 0.1s;
 }
 
 button {
@@ -71,15 +72,25 @@ button {
   font-size: 22px;
 }
 
+.button-style {
+  border: 1px solid black;
+}
+
 h1 {
   font-size: 48px;
   font-weight: 300;
 }
 
-li {
-  font-size: 26px; /* Adjust the font-size as needed */
-  line-height: 1.4; /* Adjust the line-height to match the image */
-  margin-bottom: 10px; /* Adjust the space between paragraphs as needed */
+h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+li,
+p {
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 10px;
   font-weight: 200;
 }
 
@@ -99,12 +110,19 @@ span {
   font-size: 26px;
 }
 
-#adendum {
-  display: hidden;
+.hidden {
+  display: none;
 }
 
-.show {
+/** Cases */
+
+.case {
   display: flex;
+}
+
+.case-text,
+.case img {
+  margin: 20px;
 }
 
 @media only screen and (max-width: 420px) {
@@ -154,6 +172,9 @@ span {
 
 #buttons ul li button:hover {
   font-size: 24px;
+}
+
+.button-clicked {
   background-color: #90a7df;
   color: white;
 }

@@ -1,3 +1,5 @@
+import { caseStudies } from "/cases.js";
+
 const location = document.getElementById("location");
 const adendum = document.getElementById("adendum");
 document.addEventListener("click", function (e) {
@@ -8,10 +10,25 @@ document.addEventListener("click", function (e) {
     avatar1.classList.toggle("move-right");
     avatar2.classList.toggle("move-left");
   } else if (e.target.closest("#btn-sample-work")) {
-    const adendum = document.getElementById("adendum");
-    // adendum.classList.toggle(".show");
+    const sampleWork = document.getElementById("btn-sample-work");
+    sampleWork.classList.toggle("button-clicked");
+    adendum.innerHTML = render(caseStudies);
   }
 });
+
+function render(array) {
+  const cases = array.map(
+    (caseStudy) => `<div class = "case">
+    <img src="${caseStudy.img}">
+    <div class = "case-text">
+      <h2>${caseStudy.title}</h2>
+      <p>${caseStudy.subtitle}</p>
+      <a class = "button-style" href="${caseStudy.link}">See more</a>
+  </div>
+  </div>`
+  );
+  return cases.join("");
+}
 
 let locations = [
   "Manila",
