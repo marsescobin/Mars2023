@@ -1,3 +1,5 @@
+const location = document.getElementById("location");
+const adendum = document.getElementById("adendum");
 document.addEventListener("click", function (e) {
   if (e.target.closest(".avatar")) {
     const avatar1 = document.querySelector("#avatar1");
@@ -7,7 +9,7 @@ document.addEventListener("click", function (e) {
     avatar2.classList.toggle("move-left");
   }
 });
-const location = document.getElementById("location");
+
 let locations = [
   "Manila",
   "Paris",
@@ -35,4 +37,4 @@ const intervalId = setInterval(() => {
   } else {
     i++; // Increment i only if it's not the last element
   }
-}, 300);
+}, 400);
