@@ -125,9 +125,17 @@ span {
   display: flex;
 }
 
-.case-text,
 .case img {
+  margin: 50px auto;
+}
+
+.case-text {
   margin: 10px 40px 60px 40px;
+}
+
+#adendum {
+  background-color: #90a7df;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 @media only screen and (max-width: 420px) {
@@ -180,7 +188,6 @@ span {
   }
 
   .case img {
-    margin: auto;
     height: 200px;
     width: 200px;
   }
