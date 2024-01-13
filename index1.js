@@ -1,6 +1,5 @@
 import { caseStudies } from "./cases.js";
 
-const location = document.getElementById("location");
 const adendum = document.getElementById("adendum");
 document.addEventListener("click", function (e) {
   if (e.target.closest(".avatar")) {
@@ -13,6 +12,39 @@ document.addEventListener("click", function (e) {
     adendum.innerHTML = render(caseStudies);
     adendum.classList.toggle("hidden");
     console.log(render(caseStudies));
+  } else if (e.target.closest("#btn-get-in-touch")) {
+    adendum.innerHTML = `<li>I'm currently based in <span id="location"></span></li>`;
+    const location = document.getElementById("location");
+    let locations = [
+      "Manila",
+      "Paris",
+      "Split",
+      "Porto",
+      "Lisbon",
+      "La Spezia",
+      "Ho Chi Minh",
+      "Rome",
+      "Bangkok",
+      "Budapest",
+      "Singapore",
+      "San Francisco",
+      "Cairns",
+      "Melbourne",
+      "Sydney",
+      "Bali.",
+    ];
+    let i = 0;
+
+    const intervalId = setInterval(() => {
+      location.textContent = locations[i];
+      if (i >= locations.length - 1) {
+        clearInterval(intervalId);
+      } else {
+        i++; // Increment i only if it's not the last element
+      }
+    }, 400);
+
+    adendum.classList.toggle("hidden");
   }
 });
 
@@ -29,32 +61,3 @@ function render(array) {
   );
   return cases.join("");
 }
-
-let locations = [
-  "Manila",
-  "Paris",
-  "Split",
-  "Porto",
-  "Lisbon",
-  "La Spezia",
-  "Ho Chi Minh",
-  "Rome",
-  "Bangkok",
-  "Budapest",
-  "Singapore",
-  "San Francisco",
-  "Cairns",
-  "Melbourne",
-  "Sydney",
-  "Bali.",
-];
-let i = 0;
-
-const intervalId = setInterval(() => {
-  location.textContent = locations[i];
-  if (i >= locations.length - 1) {
-    clearInterval(intervalId);
-  } else {
-    i++; // Increment i only if it's not the last element
-  }
-}, 400);
