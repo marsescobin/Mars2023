@@ -7,6 +7,9 @@ document.addEventListener("click", function (e) {
 
     avatar1.classList.toggle("move-right");
     avatar2.classList.toggle("move-left");
+  } else if (e.target.closest("#btn-sample-work")) {
+    const adendum = document.getElementById("adendum");
+    // adendum.classList.toggle(".show");
   }
 });
 

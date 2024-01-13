@@ -60,6 +60,7 @@ ul {
 
 #buttons ul li button {
   cursor: pointer;
+  transition: all 0.25s;
 }
 
 button {
@@ -96,6 +97,14 @@ span {
   color: black;
   padding: 0px;
   font-size: 26px;
+}
+
+#adendum {
+  display: hidden;
+}
+
+.show {
+  display: flex;
 }
 
 @media only screen and (max-width: 420px) {
@@ -145,5 +154,6 @@ span {
 
 #buttons ul li button:hover {
   font-size: 24px;
-  padding: 20px;
+  background-color: #90a7df;
+  color: white;
 }
