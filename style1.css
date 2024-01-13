@@ -73,7 +73,11 @@ button {
 }
 
 .button-style {
-  border: 1px solid black;
+  padding: 12px;
+  border-radius: 16px;
+  font-size: 22px;
+  width: auto;
+  color: #90a7df;
 }
 
 h1 {
@@ -122,7 +126,7 @@ span {
 
 .case-text,
 .case img {
-  margin: 20px;
+  margin: 40px;
 }
 
 @media only screen and (max-width: 420px) {
@@ -148,7 +152,8 @@ span {
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 400;
   }
 
   button {
@@ -156,7 +161,6 @@ span {
     padding: 6px 12px;
     border-radius: 16px;
     cursor: pointer;
-    color: black;
     cursor: pointer;
   }
 
@@ -168,12 +172,24 @@ span {
     font-size: 20px;
   }
 
+  .button-style {
+    padding: 12px 0px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+
   .case {
     flex-direction: column;
   }
 
   .case img {
     margin: auto;
+    height: 200px;
+    width: 200px;
+  }
+
+  .case-text p {
+    font-size: 16px;
   }
 }
 
