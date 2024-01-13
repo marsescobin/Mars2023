@@ -164,6 +164,10 @@ span {
     gap: 4px;
   }
 
+  #buttons ul li button:hover {
+    font-size: 20px;
+  }
+
   .case {
     flex-direction: column;
   }
@@ -184,7 +188,7 @@ span {
 }
 
 #buttons ul li button:hover {
-  font-size: 24px;
+  background-color: #90a7df;
 }
 
 .button-clicked {
