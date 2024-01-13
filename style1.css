@@ -190,8 +190,3 @@ span {
 #buttons ul li button:hover {
   background-color: #90a7df;
 }
-
-.button-clicked {
-  background-color: #90a7df;
-  color: white;
-}

@@ -10,9 +10,9 @@ document.addEventListener("click", function (e) {
     avatar1.classList.toggle("move-right");
     avatar2.classList.toggle("move-left");
   } else if (e.target.closest("#btn-sample-work")) {
-    const sampleWork = document.getElementById("btn-sample-work");
-    sampleWork.classList.toggle("button-clicked");
     adendum.innerHTML = render(caseStudies);
+    adendum.classList.toggle("hidden");
+    console.log(render(caseStudies));
   }
 });
 
