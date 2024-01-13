@@ -98,7 +98,7 @@ span {
   background-color: black;
   color: #fff;
   font-size: 24px;
-  padding: 4px 10px;
+  padding: 4px 16px;
   border-radius: 32px;
   cursor: pointer;
 }
@@ -134,7 +134,7 @@ span {
 
   span {
     font-size: 16px;
-    padding: 2px 4px;
+    padding: 2px 8px;
     line-height: 1.8px;
   }
 
@@ -149,7 +149,7 @@ span {
   button {
     font-size: 16px;
     padding: 6px 12px;
-    border-radius: 32px;
+    border-radius: 16px;
     cursor: pointer;
     color: black;
     cursor: pointer;
