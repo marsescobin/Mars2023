@@ -87,7 +87,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 300;
 }
 
@@ -97,6 +97,10 @@ p {
   line-height: 1.4;
   margin-bottom: 10px;
   font-weight: 200;
+}
+
+p {
+  font-size: 24px;
 }
 
 span {
@@ -130,7 +134,7 @@ span {
 }
 
 .case-text {
-  margin: 10px 40px 60px 40px;
+  margin: auto 40px;
 }
 
 #adendum {
