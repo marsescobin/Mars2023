@@ -195,6 +195,7 @@ span {
   .case img {
     height: 200px;
     width: 200px;
+    border-radius: 77% 230% 53% 59% / 97% 48% 82% 69%;
   }
 
   .case-text p {
