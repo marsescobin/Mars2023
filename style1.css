@@ -8,7 +8,7 @@ body {
 }
 
 #body {
-  margin: 20px;
+  margin: auto 20px;
 }
 
 img {
@@ -109,7 +109,6 @@ span {
   font-size: 24px;
   padding: 4px 16px;
   border-radius: 32px;
-  cursor: pointer;
 }
 
 #location {
@@ -127,18 +126,16 @@ span {
 
 .case {
   display: flex;
+  margin-bottom: 75px;
 }
 
 .case-img {
   padding: 20px;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .case-text {
   margin: auto 40px;
-}
-
-.case img {
 }
 
 .case-img {
@@ -169,7 +166,7 @@ span {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
   }
 
@@ -197,8 +194,8 @@ span {
   }
 
   .case img {
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 175px;
   }
 
   .case-text p {
