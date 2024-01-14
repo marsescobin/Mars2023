@@ -62,9 +62,8 @@ ul {
 #buttons ul li button {
   cursor: pointer;
   transition: all 0.1s;
-  color: black;
-  border: 3px solid black;
-  background: white;
+  color: #90a7df;
+  border: 3px solid #90a7df;
 }
 
 button {
