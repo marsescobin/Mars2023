@@ -63,7 +63,6 @@ ul {
   cursor: pointer;
   transition: all 0.1s;
   color: #90a7df;
-  border: 3px solid #90a7df;
 }
 
 button {
@@ -180,6 +179,7 @@ span {
     border-radius: 16px;
     cursor: pointer;
     cursor: pointer;
+    font-family: 400;
   }
 
   #buttons ul {
