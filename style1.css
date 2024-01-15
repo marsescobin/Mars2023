@@ -102,6 +102,10 @@ p {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 span {
   background-color: black;
   color: #fff;
@@ -119,6 +123,10 @@ span {
 
 .hidden {
   display: none;
+}
+
+#adendum {
+  margin-top: 40px;
 }
 
 /** Cases */
@@ -154,6 +162,10 @@ span {
     font-size: 16px;
     padding: 2px 8px;
     line-height: 1.8px;
+  }
+
+  #featured {
+    color: blue;
   }
 
   #location {

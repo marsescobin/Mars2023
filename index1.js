@@ -11,6 +11,8 @@ document.addEventListener("click", function (e) {
   } else if (e.target.closest("#btn-sample-work")) {
     adendum.innerHTML = render(caseStudies);
     adendum.classList.toggle("hidden");
+    adendum.scrollIntoView({ behavior: "smooth" });
+
     console.log(render(caseStudies));
   } else if (e.target.closest("#btn-get-in-touch")) {
     adendum.innerHTML = `<li>I'm currently based in <span id="location"></span></li>`;
