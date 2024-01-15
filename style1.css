@@ -74,9 +74,8 @@ button {
 }
 
 .button-style {
-  padding: 12px;
   border-radius: 16px;
-  font-size: 22px;
+  font-size: 20px;
   width: auto;
   color: #90a7df;
 }
@@ -88,7 +87,7 @@ h1 {
 
 h2 {
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 li,
@@ -100,7 +99,7 @@ p {
 }
 
 p {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 span {

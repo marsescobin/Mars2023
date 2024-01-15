@@ -52,12 +52,12 @@ function render(array) {
   const cases = array.map(
     (caseStudy) => `<div class = "case">
     <div class = "case-img">
-    <img src="${caseStudy.img}">
+    <a href="${caseStudy.link}" target="_blank"><img src="${caseStudy.img}"></a>
     </div>
     <div class = "case-text">
       <h2>${caseStudy.title}</h2>
       <p>${caseStudy.subtitle}</p>
-      <a class = "button-style" href="${caseStudy.link}">Read more</a>
+      <a class = "button-style" href="${caseStudy.link}" target="_blank">Read more</a>
   </div>
   </div>`
   );
