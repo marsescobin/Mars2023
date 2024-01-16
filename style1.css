@@ -131,7 +131,25 @@ span {
   margin-top: 40px;
 }
 
-/** Cases */
+/*SAMPLE WORK*/
+
+#menu {
+  display: flex;
+  gap: 12px;
+}
+
+#product {
+  font-weight: 800;
+}
+
+hr {
+  margin-bottom: 40px;
+}
+
+#product {
+  color: black;
+  font-weight: 500;
+}
 
 .case {
   display: flex;

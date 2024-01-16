@@ -9,11 +9,14 @@ document.addEventListener("click", function (e) {
     avatar1.classList.toggle("move-right");
     avatar2.classList.toggle("move-left");
   } else if (e.target.closest("#btn-sample-work")) {
-    adendum.innerHTML = render(caseStudies);
+    adendum.innerHTML =
+      `<ul id = "menu">
+    <li id = "product">Product</li>
+    <li>Code</li>
+    <li>Design</li>
+    <li>People</li></ul> <hr>` + render(caseStudies);
     adendum.classList.toggle("hidden");
     adendum.scrollIntoView({ behavior: "smooth" });
-
-    console.log(render(caseStudies));
   } else if (e.target.closest("#btn-get-in-touch")) {
     adendum.innerHTML = `<li>I'm currently based in <span id="location"></span></li>`;
     const location = document.getElementById("location");
@@ -45,8 +48,6 @@ document.addEventListener("click", function (e) {
         i++; // Increment i only if it's not the last element
       }
     }, 400);
-
-    adendum.classList.toggle("hidden");
   }
 });
 
