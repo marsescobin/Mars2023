@@ -12,7 +12,7 @@ export const caseStudies = [
     title:
       "How I shortened the onboarding time at Magic, from weeks to minutes",
     subtitle: `Third party service providers are usually heaven-sent. But what happens when their tech are unable to keep up with your business needs?
-    This was our dillemma. Thankfully, our provider responded well to our request. And a tech and product collab lead to a faster and more efficient onboarding.`,
+    This was our dillemma. Thankfully, our provider responded well to our product request. And a tech integration lead to a faster and more efficient onboarding.`,
   },
   {
     img: "./photos/img4.svg",
