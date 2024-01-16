@@ -14,7 +14,7 @@ document.addEventListener("click", function (e) {
     <li id = "product">Product</li>
     <li>Code</li>
     <li>Design</li>
-    <li>People</li></ul> <hr>` + render(caseStudies);
+    </ul> <hr>` + render(caseStudies);
     adendum.classList.toggle("hidden");
     adendum.scrollIntoView({ behavior: "smooth" });
   } else if (e.target.closest("#btn-get-in-touch")) {
