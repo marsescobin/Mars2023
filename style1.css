@@ -62,7 +62,9 @@ ul {
 #buttons ul li button {
   cursor: pointer;
   transition: all 0.1s;
-  color: #90a7df;
+  color: black;
+  border: 2px black solid;
+  background: white;
 }
 
 button {
@@ -227,5 +229,11 @@ span {
 
 #buttons ul li button:hover {
   background-color: #90a7df;
+  border: none;
   color: white;
+}
+
+.clicked {
+  background-color: gainsboro;
+  color: #90a7df;
 }
