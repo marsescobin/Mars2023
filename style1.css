@@ -135,20 +135,12 @@ span {
 
 #menu {
   display: flex;
-  gap: 12px;
-}
-
-#product {
-  font-weight: 800;
-}
-
-hr {
-  margin-bottom: 40px;
+  gap: 24px;
 }
 
 #product {
   color: black;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .case {
@@ -232,6 +224,21 @@ hr {
 
   .case-text p {
     font-size: 16px;
+  }
+
+  hr {
+    color: black;
+    width: 90%;
+    opacity: 50%;
+    margin-bottom: 40px;
+  }
+
+  #menu {
+    margin: 0px 20px;
+  }
+
+  #adendum {
+    margin-top: 0px;
   }
 }
 
