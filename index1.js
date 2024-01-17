@@ -21,7 +21,6 @@ document.addEventListener("click", function (e) {
   } else if (e.target.closest(".action-button")) {
     e.target.classList.toggle("clicked");
     if (e.target.closest("#btn-cv")) {
-      adendum.innerHTML = `<p id= "download-cv"> Your download should start shortly</p>`;
     } else if (e.target.closest("#btn-sample-work")) {
       adendum.innerHTML = menu + render(caseStudies);
       adendum.scrollIntoView({ behavior: "smooth" });
