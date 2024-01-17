@@ -21,7 +21,15 @@ document.addEventListener("click", function (e) {
       </ul> <hr>` + render(caseStudies);
       adendum.scrollIntoView({ behavior: "smooth" });
     } else if (e.target.closest("#btn-get-in-touch")) {
-      adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy. Feel free to email marsescobin@gmail.com if you want to partner up, collab, or hire me.</p>`;
+      adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy.
+      Feel free to email 
+      <a href="mailto:marsescobin@gmail.com">marsescobin@gmail.com</a> 
+      if you want to partner up, collab, or hire me.
+      Relevant links: 
+      <a href="https://www.linkedin.com/in/productmars/" target="blank">LinkedIn</a>,
+      <a href="https://github.com/mariannetrizha" target="blank">Github</a>,
+      <a href="https://medium.com/@mars_escobin" target="blank">Medium</a>.
+   </p>`;
 
       const location = document.getElementById("location");
       let locations = [
