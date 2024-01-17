@@ -189,9 +189,14 @@ span {
 
 #work-with-me,
 #default-message,
+#medium-intro,
 #medium-posts,
 #download-cv {
   margin: auto 40px;
+}
+
+#medium-intro {
+  margin: 20px;
 }
 
 @media only screen and (max-width: 420px) {
