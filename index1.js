@@ -10,7 +10,7 @@ const menu = `<ul id="menu">
 <li id="design">Design</li>
 </ul>
 <hr />`;
-const defaultMessage = `<p id="default-message">Coming soon</p>`;
+const defaultMessage = `<p id="default-message">Still working on it</p>`;
 document.addEventListener("click", function (e) {
   if (e.target.closest(".avatar")) {
     const avatar1 = document.querySelector("#avatar1");
