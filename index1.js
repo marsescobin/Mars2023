@@ -5,7 +5,6 @@ const menu = `<ul id="menu">
 <li id="product">Product</li>
 <li id="code">Code</li>
 <li id="design">Design</li>
-<li id="people">People</li>
 </ul>
 <hr />`;
 const defaultMessage = `<p id="default-message">Coming soon</p>`;
@@ -19,7 +18,7 @@ document.addEventListener("click", function (e) {
   } else if (e.target.closest(".action-button")) {
     e.target.classList.toggle("clicked");
     if (e.target.closest("#btn-cv")) {
-      adendum.innerHTML = "<p>Your download should start shortly</p>";
+      adendum.innerHTML = `<p id= "download-cv"> Your download should start shortly</p>`;
     } else if (e.target.closest("#btn-sample-work")) {
       adendum.innerHTML = menu + render(caseStudies);
       adendum.scrollIntoView({ behavior: "smooth" });
