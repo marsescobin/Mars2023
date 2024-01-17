@@ -313,6 +313,11 @@ span {
   #adendum {
     margin-top: 0px;
   }
+
+  #medium-intro,
+  .medium-link {
+    font-size: 16px;
+  }
 }
 
 /** Animation */
