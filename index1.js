@@ -90,7 +90,9 @@ function render(array) {
       <p>${caseStudy.subtitle}</p>
       <a class = "button-style" href="${caseStudy.link}" target="_blank">Read more</a>
   </div>
-  </div>`
+  <div id = "box${index}", class="box"></div>
+  </div>
+  `
   );
   return cases.join("");
 }
