@@ -50,7 +50,7 @@ document.addEventListener("click", function (e) {
     adendum.scrollIntoView({ behavior: "smooth" });
     adendum.innerHTML =
       menu +
-      `<p id ="medium-intro">I've yet to compile my coding projects. But I've written about some of them on <a href="https://medium.com/@mars_escobin" target="blank">Medium</a>. I code in Javascript, Python, HTML & CSS, and I'm currently learning React. My Github: <a href="https://github.com/mariannetrizha" target ="blank">@marsescobin</a>. </p>
+      `<p id ="medium-intro">I've yet to compile my coding projects. But I've written about some of them on <a href="https://medium.com/@mars_escobin" target="blank">Medium</a>. I code in Javascript, Python, HTML & CSS, and I'm currently learning React. </p>
     <ul id="medium-posts">
     <li class="medium-link"><a target ="blank" href="https://medium.com/python-in-plain-english/4-python-libraries-to-help-you-make-money-from-webscraping-57ba6d8ce56d">4 Python Libraries to Help you Make Money from Webscraping
     </a></li>
