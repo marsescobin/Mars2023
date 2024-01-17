@@ -270,6 +270,10 @@ span {
     margin: 0px 20px;
   }
 
+  #menu li {
+    cursor: pointer;
+  }
+
   #adendum {
     margin-top: 0px;
   }
