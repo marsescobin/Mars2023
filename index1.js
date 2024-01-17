@@ -22,12 +22,8 @@ document.addEventListener("click", function (e) {
       //adendum.classList.toggle("hidden");
       adendum.scrollIntoView({ behavior: "smooth" });
     } else if (e.target.closest("#btn-get-in-touch")) {
-      adendum.innerHTML = `<p id="work-with-me">I’m always on the look out for interesting projects. If you want to partner up, hire me, or collab, feel free to email me at marsescobin@gmail.com. You can also find some of my works on:</p>
-      <ul>
-      <li>LinkedIn</li>
-      <li>Medium</li>
-      <li>Github</li>
-      </ul>`;
+      adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy. Feel free to email marsescobin@gmail.com if you want to partner up, collab, or hire me.</p>`;
+
       const location = document.getElementById("location");
       let locations = [
         "Manila",
