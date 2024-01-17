@@ -1,6 +1,7 @@
 export const caseStudies = [
   {
     img: "./photos/app-launch.svg",
+    img2: "",
     tags: "AI, ChatGPT, Product discovery, launch, roadmapping, product lifecycle",
     link: "https://shade-leo-dfe.notion.site/How-I-revamped-the-customer-journey-and-tripled-paying-users-at-BoostBot-through-AI-b49d5f14244140bba8a702a705916315?pvs=4",
     title:
@@ -13,12 +14,13 @@ export const caseStudies = [
     title:
       "How I shortened the onboarding time at Magic, from weeks to minutes",
     subtitle: `Third party service providers are usually heaven-sent. But what happens when their tech are unable to keep up with your business needs?
-    This was our dillemma. Thankfully, our provider responded well to our product request. And a tech integration lead to a faster and more efficient onboarding.`,
+    This was our dilemma with Deel, who opened up a waitlist for their API. But what's a product manager to do? Wait patiently? Not quite my style. 
+    See how we shrunk onboarding time by reaching out and collaborating with another product team.`,
   },
   {
     img: "./photos/img4.svg",
     link: "https://shade-leo-dfe.notion.site/How-I-halved-payment-tickets-in-Magic-with-a-dashboard-revamp-0c8b4ea267fc488cb400e2ef256d4ba0",
-    title: "How I halved payment tickets in Magic with a dashboard revamp",
+    title: "How I halved support tickets at Magic with a dashboard revamp",
     subtitle: `User interviews and sentiment analysis lead to one conclusion: we were dodgy and confusing when it comes to payment communication. After batches of iteration, we finally released a new payment dashboard and guess what? Payment support tickets went down about 50%.`,
   },
 ];

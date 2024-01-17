@@ -166,10 +166,13 @@ span {
 #work-with-me {
   display: flex;
   margin: auto 50px;
+}
+
+.case-img {
   /* HTML: <div class="loader"></div> */
-  width: 50px;
+  width: 150px;
   aspect-ratio: 1;
-  background: #006cff;
+  background: #90a7df;
   border-radius: 50%;
   animation: l1 3s infinite linear;
 }
@@ -209,10 +212,6 @@ span {
     font-size: 16px;
     padding: 2px 8px;
     line-height: 1.8px;
-  }
-
-  #featured {
-    color: blue;
   }
 
   #location {
