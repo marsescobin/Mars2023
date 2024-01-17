@@ -25,12 +25,14 @@ img {
   width: 150px;
 }
 
-#avatar1 {
+#avatar1,
+.img-1 {
   transform: rotate(-9deg);
   position: relative;
 }
 
-#avatar2 {
+#avatar2,
+.img-2 {
   bottom: 180px;
   position: relative;
   transform: rotate(9deg);

@@ -19,7 +19,6 @@ document.addEventListener("click", function (e) {
       <li>Code</li>
       <li>Design</li>
       </ul> <hr>` + render(caseStudies);
-      //adendum.classList.toggle("hidden");
       adendum.scrollIntoView({ behavior: "smooth" });
     } else if (e.target.closest("#btn-get-in-touch")) {
       adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy. Feel free to email marsescobin@gmail.com if you want to partner up, collab, or hire me.</p>`;
@@ -54,14 +53,37 @@ document.addEventListener("click", function (e) {
         }
       }, 400);
     }
+  } else if (e.target.closest(".img-div-0")) {
+    const img1 = document.getElementById("img-1-0");
+    const img2 = document.getElementById("img-2-0");
+
+    img1.classList.toggle("move-right");
+    img2.classList.toggle("move-left");
+  } else if (e.target.closest(".img-div-1")) {
+    const img1 = document.getElementById("img-1-1");
+    const img2 = document.getElementById("img-2-1");
+
+    img1.classList.toggle("move-right");
+    img2.classList.toggle("move-left");
+  } else if (e.target.closest(".img-div-2")) {
+    const img1 = document.getElementById("img-1-2");
+    const img2 = document.getElementById("img-2-2");
+
+    img1.classList.toggle("move-right");
+    img2.classList.toggle("move-left");
   }
 });
 
 function render(array) {
   const cases = array.map(
-    (caseStudy) => `<div class = "case">
-    <div class = "case-img">
-    <a href="${caseStudy.link}" target="_blank"><img src="${caseStudy.img}"></a>
+    (caseStudy, index) => `<div class = "case" id ="case-${index}" >
+    <div id = "case-img-${index}" class = "case-img">
+    <div id ="img-1-${index}" class = "img-div-${index} img-1">
+      <img src="${caseStudy.img2}">
+    </div>
+    <div id ="img-2-${index}"  class = "img-div-${index} img-2">
+      <img src="${caseStudy.img1}">
+  </div>
     </div>
     <div class = "case-text">
       <h2>${caseStudy.title}</h2>
