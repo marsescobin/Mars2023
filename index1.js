@@ -26,7 +26,7 @@ document.addEventListener("click", function (e) {
       adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy.
       Feel free to email 
       <a href="mailto:marsescobin@gmail.com">marsescobin@gmail.com</a> 
-      if you want to partner up, collab, or hire me.</p>`;
+      if you want to partner up, collab, or are interested in hiring me.</p><div id="beidge-blob">`;
     }
   } else if (e.target.closest(".img-div-0")) {
     const img1 = document.getElementById("img-1-0");
