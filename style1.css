@@ -131,9 +131,12 @@ span {
 .hidden {
   display: none;
 }
-
+.shown {
+  display: block;
+}
 #adendum {
   margin-top: 40px;
+  width: 100%;
 }
 
 /*SAMPLE WORK*/
@@ -141,6 +144,7 @@ span {
 #menu {
   display: flex;
   gap: 24px;
+  width: 100%;
 }
 
 #menu li {

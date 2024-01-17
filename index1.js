@@ -1,6 +1,14 @@
 import { caseStudies } from "./cases.js";
 
 const adendum = document.getElementById("adendum");
+const menu = `<ul id="menu">
+<li id="product">Product</li>
+<li id="code">Code</li>
+<li id="design">Design</li>
+<li id="people">People</li>
+</ul>
+<hr />`;
+const defaultMessage = `<p>Coming soon</p>`;
 document.addEventListener("click", function (e) {
   if (e.target.closest(".avatar")) {
     const avatar1 = document.querySelector("#avatar1");
@@ -13,12 +21,7 @@ document.addEventListener("click", function (e) {
     if (e.target.closest("#btn-cv")) {
       adendum.innerHTML = "<p>Your download should start shortly</p>";
     } else if (e.target.closest("#btn-sample-work")) {
-      adendum.innerHTML =
-        `<ul id = "menu">
-      <li id = "product">Product</li>
-      <li>Code</li>
-      <li>Design</li>
-      </ul> <hr>` + render(caseStudies);
+      adendum.innerHTML = menu + render(caseStudies);
       adendum.scrollIntoView({ behavior: "smooth" });
     } else if (e.target.closest("#btn-get-in-touch")) {
       adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy.
@@ -30,36 +33,6 @@ document.addEventListener("click", function (e) {
       <a href="https://github.com/mariannetrizha" target="blank">Github</a>,
       <a href="https://medium.com/@mars_escobin" target="blank">Medium</a>.
    </p>`;
-
-      const location = document.getElementById("location");
-      let locations = [
-        "Manila",
-        "Paris",
-        "Split",
-        "Porto",
-        "Lisbon",
-        "La Spezia",
-        "Ho Chi Minh",
-        "Rome",
-        "Bangkok",
-        "Budapest",
-        "Singapore",
-        "San Francisco",
-        "Cairns",
-        "Melbourne",
-        "Sydney",
-        "Bali.",
-      ];
-      let i = 0;
-
-      const intervalId = setInterval(() => {
-        location.textContent = locations[i];
-        if (i >= locations.length - 1) {
-          clearInterval(intervalId);
-        } else {
-          i++; // Increment i only if it's not the last element
-        }
-      }, 400);
     }
   } else if (e.target.closest(".img-div-0")) {
     const img1 = document.getElementById("img-1-0");
@@ -79,6 +52,18 @@ document.addEventListener("click", function (e) {
 
     img1.classList.toggle("move-right");
     img2.classList.toggle("move-left");
+  } else if (e.target.closest("#code")) {
+    adendum.scrollIntoView({ behavior: "smooth" });
+    adendum.innerHTML = menu + `<p>${defaultMessage}</p>`;
+  } else if (e.target.closest("#design")) {
+    adendum.scrollIntoView({ behavior: "smooth" });
+    adendum.innerHTML = menu + `<p>${defaultMessage}</p>`;
+  } else if (e.target.closest("#product")) {
+    adendum.scrollIntoView({ behavior: "smooth" });
+    adendum.innerHTML = menu + render(caseStudies);
+  } else if (e.target.closest("#people")) {
+    adendum.scrollIntoView({ behavior: "smooth" });
+    adendum.innerHTML = menu + `<p>${defaultMessage}</p>`;
   }
 });
 
