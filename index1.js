@@ -22,7 +22,7 @@ document.addEventListener("click", function (e) {
       //adendum.classList.toggle("hidden");
       adendum.scrollIntoView({ behavior: "smooth" });
     } else if (e.target.closest("#btn-get-in-touch")) {
-      adendum.innerHTML = `<li>I'm currently based in <span id="location"></span></li>`;
+      adendum.innerHTML = `<p id="work-with-me">I’m always on the look out for interesting projects. If you want to collab or partner up, feel free to email marsescobin@gmail.com</p>`;
       const location = document.getElementById("location");
       let locations = [
         "Manila",
