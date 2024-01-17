@@ -27,12 +27,7 @@ document.addEventListener("click", function (e) {
       adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy.
       Feel free to email 
       <a href="mailto:marsescobin@gmail.com">marsescobin@gmail.com</a> 
-      if you want to partner up, collab, or hire me.
-      Relevant links: 
-      <a href="https://www.linkedin.com/in/productmars/" target="blank">LinkedIn</a>,
-      <a href="https://github.com/mariannetrizha" target="blank">Github</a>,
-      <a href="https://medium.com/@mars_escobin" target="blank">Medium</a>.
-   </p>`;
+      if you want to partner up, collab, or hire me.</p>`;
     }
   } else if (e.target.closest(".img-div-0")) {
     const img1 = document.getElementById("img-1-0");
@@ -56,15 +51,15 @@ document.addEventListener("click", function (e) {
     adendum.scrollIntoView({ behavior: "smooth" });
     adendum.innerHTML =
       menu +
-      `<p>I've yet to compile my coding projects. But I've written about some of them on Medium. I code in Javascript, Python, HTML & CSS, and I'm currently learning React. My Github: <a href="https://github.com/mariannetrizha" target ="blank">@marsescobin</a> </p>
-    <ul>
-    <li><a target ="blank" href="https://medium.com/python-in-plain-english/4-python-libraries-to-help-you-make-money-from-webscraping-57ba6d8ce56d">4 Python Libraries to Help you Make Money from Webscraping
+      `<p>I've yet to compile my coding projects. But I've written about some of them on <a href="https://medium.com/@mars_escobin" target="blank">Medium</a>. I code in Javascript, Python, HTML & CSS, and I'm currently learning React. My Github: <a href="https://github.com/mariannetrizha" target ="blank">@marsescobin</a>. </p>
+    <ul id="medium-posts">
+    <li class="medium-link"><a target ="blank" href="https://medium.com/python-in-plain-english/4-python-libraries-to-help-you-make-money-from-webscraping-57ba6d8ce56d">4 Python Libraries to Help you Make Money from Webscraping
     </a></li>
-    <li><a target ="blank" href="https://levelup.gitconnected.com/six-easy-steps-to-create-a-telegram-bot-from-a-google-spreadsheet-b62008d2b81f">How to Create Telegram Bots Using Webhooks
+    <li class="medium-link"><a target ="blank" href="https://levelup.gitconnected.com/six-easy-steps-to-create-a-telegram-bot-from-a-google-spreadsheet-b62008d2b81f">How to Create Telegram Bots Using Webhooks
     </a></li>
-    <li><a target ="blank" href="https://medium.com/@mars_escobin/predicting-bitcoin-prices-using-random-forest-e530f5901ed7">Predicting Bitcoin Prices using Random Forest
+    <li class="medium-link"><a target ="blank" href="https://medium.com/@mars_escobin/predicting-bitcoin-prices-using-random-forest-e530f5901ed7">Predicting Bitcoin Prices using Random Forest
     </a></li>
-    <li><a href="https://medium.com/swlh/selecting-data-in-pandas-ff9fe1370785" target="blank">Selecting</a>, <a href="https://levelup.gitconnected.com/filtering-data-in-pandas-c7b60d1e1301" target="blank">filtering</a>, <a href="https://medium.com/@chutzpah/combining-data-in-pandas-31c984afceb7"target="blank">combining</a>, and <a href="https://medium.com/swlh/grouping-and-aggregating-data-in-pandas-7cae8c5023ce" target="blank">aggregating</a> data in Pandas</li>
+    <li class="medium-link"><a href="https://medium.com/swlh/selecting-data-in-pandas-ff9fe1370785" target="blank">Selecting</a>, <a href="https://levelup.gitconnected.com/filtering-data-in-pandas-c7b60d1e1301" target="blank">filtering</a>, <a href="https://medium.com/@chutzpah/combining-data-in-pandas-31c984afceb7"target="blank">combining</a>, and <a href="https://medium.com/swlh/grouping-and-aggregating-data-in-pandas-7cae8c5023ce" target="blank">aggregating</a> data in Pandas</li>
     </ul>`;
   } else if (e.target.closest("#design")) {
     adendum.scrollIntoView({ behavior: "smooth" });

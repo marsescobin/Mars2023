@@ -54,6 +54,10 @@ ul {
   padding: 0;
 }
 
+#medium-posts {
+  list-style: disc;
+}
+
 #body ul {
   margin: 20px 0 30px 0;
 }
@@ -105,7 +109,8 @@ p {
   font-weight: 200;
 }
 
-p {
+p,
+.medium-link {
   font-size: 20px;
 }
 
@@ -183,13 +188,15 @@ span {
 }
 
 #work-with-me,
-#default-message {
+#default-message,
+#medium-posts {
   margin: auto 40px;
 }
 
 @media only screen and (max-width: 420px) {
   li,
-  p {
+  p,
+  .medium-link {
     font-size: 18px;
     line-height: 1.5;
     padding-bottom: 4px;
