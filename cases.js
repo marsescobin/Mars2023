@@ -15,8 +15,8 @@ export const caseStudies = [
     title:
       "How I shortened the onboarding time at Magic, from weeks to minutes",
     subtitle: `Third party service providers are usually heaven-sent. But what happens when their tech are unable to keep up with your business needs?
-    This was our dilemma with Deel, who opened up a waitlist for their API. But what's a product manager to do? Wait patiently? Not quite my style. 
-    See how we shrunk onboarding time by reaching out and collaborating with another product team.`,
+    This was our dilemma with Deel, who had us on their API waitlist. But what's a product manager to do? Wait patiently? Not quite my style. 
+    By the end of this engagement, we shrunk our onboarding time from weeks to minutes.`,
   },
   {
     img1: "./photos/img4.svg",

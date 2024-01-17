@@ -143,9 +143,18 @@ span {
   gap: 24px;
 }
 
+#menu li {
+  cursor: pointer;
+}
+
+#menu li:hover {
+  font-weight: 700;
+}
+
 #product {
   color: black;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .case {
