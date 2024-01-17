@@ -163,6 +163,11 @@ span {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
+#work-with-me {
+  display: flex;
+  margin: auto 50px;
+}
+
 @media only screen and (max-width: 420px) {
   li,
   p {
