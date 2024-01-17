@@ -1,6 +1,7 @@
 export const caseStudies = [
   {
     img: "./photos/app-launch.svg",
+    tags: "AI, ChatGPT, Product discovery, launch, roadmapping, product lifecycle",
     link: "https://shade-leo-dfe.notion.site/How-I-revamped-the-customer-journey-and-tripled-paying-users-at-BoostBot-through-AI-b49d5f14244140bba8a702a705916315?pvs=4",
     title:
       "How I revamped the customer journey at BoostBot and tripled paying users through AI",

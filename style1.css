@@ -253,12 +253,11 @@ span {
 }
 
 #buttons ul li button:hover {
-  background-color: #90a7df;
-  border: none;
-  color: white;
+  font-weight: 700;
 }
 
 .clicked {
-  background-color: gainsboro;
-  color: #90a7df;
+  background-color: #90a7df;
+  border: none;
+  color: white;
 }

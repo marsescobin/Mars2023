@@ -8,46 +8,51 @@ document.addEventListener("click", function (e) {
 
     avatar1.classList.toggle("move-right");
     avatar2.classList.toggle("move-left");
-  } else if (e.target.closest("#btn-sample-work")) {
-    adendum.innerHTML =
-      `<ul id = "menu">
-    <li id = "product">Product</li>
-    <li>Code</li>
-    <li>Design</li>
-    </ul> <hr>` + render(caseStudies);
-    adendum.classList.toggle("hidden");
-    adendum.scrollIntoView({ behavior: "smooth" });
-  } else if (e.target.closest("#btn-get-in-touch")) {
-    adendum.innerHTML = `<li>I'm currently based in <span id="location"></span></li>`;
-    const location = document.getElementById("location");
-    let locations = [
-      "Manila",
-      "Paris",
-      "Split",
-      "Porto",
-      "Lisbon",
-      "La Spezia",
-      "Ho Chi Minh",
-      "Rome",
-      "Bangkok",
-      "Budapest",
-      "Singapore",
-      "San Francisco",
-      "Cairns",
-      "Melbourne",
-      "Sydney",
-      "Bali.",
-    ];
-    let i = 0;
+  } else if (e.target.closest(".action-button")) {
+    e.target.classList.toggle("clicked");
+    if (e.target.closest("#btn-cv")) {
+      adendum.innerHTML = "<p>Your download should start shortly</p>";
+    } else if (e.target.closest("#btn-sample-work")) {
+      adendum.innerHTML =
+        `<ul id = "menu">
+      <li id = "product">Product</li>
+      <li>Code</li>
+      <li>Design</li>
+      </ul> <hr>` + render(caseStudies);
+      //adendum.classList.toggle("hidden");
+      adendum.scrollIntoView({ behavior: "smooth" });
+    } else if (e.target.closest("#btn-get-in-touch")) {
+      adendum.innerHTML = `<li>I'm currently based in <span id="location"></span></li>`;
+      const location = document.getElementById("location");
+      let locations = [
+        "Manila",
+        "Paris",
+        "Split",
+        "Porto",
+        "Lisbon",
+        "La Spezia",
+        "Ho Chi Minh",
+        "Rome",
+        "Bangkok",
+        "Budapest",
+        "Singapore",
+        "San Francisco",
+        "Cairns",
+        "Melbourne",
+        "Sydney",
+        "Bali.",
+      ];
+      let i = 0;
 
-    const intervalId = setInterval(() => {
-      location.textContent = locations[i];
-      if (i >= locations.length - 1) {
-        clearInterval(intervalId);
-      } else {
-        i++; // Increment i only if it's not the last element
-      }
-    }, 400);
+      const intervalId = setInterval(() => {
+        location.textContent = locations[i];
+        if (i >= locations.length - 1) {
+          clearInterval(intervalId);
+        } else {
+          i++; // Increment i only if it's not the last element
+        }
+      }, 400);
+    }
   }
 });
 
