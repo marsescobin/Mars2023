@@ -141,7 +141,8 @@ span {
 
 /*SAMPLE WORK*/
 
-#menu {
+#menu,
+#default-message {
   display: flex;
   gap: 24px;
   width: 100%;
