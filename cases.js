@@ -23,6 +23,6 @@ export const caseStudies = [
     img2: "./photos/pay1.png",
     link: "https://shade-leo-dfe.notion.site/How-I-halved-payment-tickets-in-Magic-with-a-dashboard-revamp-0c8b4ea267fc488cb400e2ef256d4ba0",
     title: "How I halved support tickets at Magic with a dashboard revamp",
-    subtitle: `User interviews and sentiment analysis ledd to one conclusion: we were dodgy and confusing when it comes to payment communication. After batches of iteration, we finally released a new payment dashboard and guess what? Payment support tickets went down 50%.`,
+    subtitle: `User interviews and sentiment analysis led to one conclusion: we were dodgy and confusing when it comes to payment communication. After batches of iteration, we finally released a new payment dashboard and guess what? Payment support tickets went down 50%.`,
   },
 ];
