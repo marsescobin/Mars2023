@@ -54,7 +54,18 @@ document.addEventListener("click", function (e) {
     img2.classList.toggle("move-left");
   } else if (e.target.closest("#code")) {
     adendum.scrollIntoView({ behavior: "smooth" });
-    adendum.innerHTML = menu + `<p>${defaultMessage}</p>`;
+    adendum.innerHTML =
+      menu +
+      `<p>I've yet to compile my coding projects. But I've written about some of them on Medium. I code in Javascript, Python, HTML & CSS, and I'm currently learning React. My Github: <a href="https://github.com/mariannetrizha" target ="blank">@marsescobin</a> </p>
+    <ul>
+    <li><a target ="blank" href="https://medium.com/python-in-plain-english/4-python-libraries-to-help-you-make-money-from-webscraping-57ba6d8ce56d">4 Python Libraries to Help you Make Money from Webscraping
+    </a></li>
+    <li><a target ="blank" href="https://levelup.gitconnected.com/six-easy-steps-to-create-a-telegram-bot-from-a-google-spreadsheet-b62008d2b81f">How to Create Telegram Bots Using Webhooks
+    </a></li>
+    <li><a target ="blank" href="https://medium.com/@mars_escobin/predicting-bitcoin-prices-using-random-forest-e530f5901ed7">Predicting Bitcoin Prices using Random Forest
+    </a></li>
+    <li><a href="https://medium.com/swlh/selecting-data-in-pandas-ff9fe1370785" target="blank">Selecting</a>, <a href="https://levelup.gitconnected.com/filtering-data-in-pandas-c7b60d1e1301" target="blank">filtering</a>, <a href="https://medium.com/@chutzpah/combining-data-in-pandas-31c984afceb7"target="blank">combining</a>, and <a href="https://medium.com/swlh/grouping-and-aggregating-data-in-pandas-7cae8c5023ce" target="blank">aggregating</a> data in Pandas</li>
+    </ul>`;
   } else if (e.target.closest("#design")) {
     adendum.scrollIntoView({ behavior: "smooth" });
     adendum.innerHTML = menu + `<p>${defaultMessage}</p>`;
