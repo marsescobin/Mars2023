@@ -137,7 +137,7 @@ span {
   display: none;
 }
 .shown {
-  display: block;
+  display: flex;
 }
 #adendum {
   margin-top: 40px;
@@ -187,7 +187,6 @@ span {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
-#work-with-me,
 #default-message,
 #medium-intro,
 #medium-posts,
@@ -196,7 +195,39 @@ span {
 }
 
 #medium-intro {
-  margin: 20px;
+  margin: auto 20px;
+}
+
+#work-with-me {
+  margin: auto 20px;
+}
+
+#wwm-modal {
+  background: white;
+  border: 3px solid black;
+  border-radius: 16px;
+  min-height: 200px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+#close-wwm {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 8px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(5px);
 }
 
 @media only screen and (max-width: 420px) {

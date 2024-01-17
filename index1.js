@@ -1,6 +1,9 @@
 import { caseStudies } from "./cases.js";
 
 const adendum = document.getElementById("adendum");
+const body = document.getElementById("body");
+const wwm = document.getElementById("wwm-modal");
+
 const menu = `<ul id="menu">
 <li id="product">Product</li>
 <li id="code">Code</li>
@@ -23,10 +26,8 @@ document.addEventListener("click", function (e) {
       adendum.innerHTML = menu + render(caseStudies);
       adendum.scrollIntoView({ behavior: "smooth" });
     } else if (e.target.closest("#btn-get-in-touch")) {
-      adendum.innerHTML = `<p id="work-with-me">Solving real problems thru tech make me happy.
-      Feel free to email 
-      <a href="mailto:marsescobin@gmail.com">marsescobin@gmail.com</a> 
-      if you want to partner up, collab, or are interested in hiring me.</p><div id="beidge-blob">`;
+      wwm.classList.add("shown");
+      body.classList.add("blur");
     }
   } else if (e.target.closest(".img-div-0")) {
     const img1 = document.getElementById("img-1-0");
@@ -69,6 +70,10 @@ document.addEventListener("click", function (e) {
   } else if (e.target.closest("#people")) {
     adendum.scrollIntoView({ behavior: "smooth" });
     adendum.innerHTML = menu + `<p>${defaultMessage}</p>`;
+  } else if (e.target.closest("#close-wwm")) {
+    console.log("test");
+    wwm.classList.toggle("shown");
+    body.classList.toggle("blur");
   }
 });
 
