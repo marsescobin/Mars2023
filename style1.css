@@ -230,6 +230,15 @@ span {
   filter: blur(5px);
 }
 
+@media only screen and (max-width: 720px) {
+  .case {
+    flex-direction: column;
+  }
+  .case-img {
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 420px) {
   li,
   p {
